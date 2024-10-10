@@ -55,9 +55,17 @@ header nav ul li {
 }
 
 /* Banner Starts */
+header .banner {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
 header .banner-txt {
     text-align: center;
-    margin-top: 100px;
+
 }
 
 header .banner-txt h2 {
@@ -74,16 +82,11 @@ header .banner-txt p {
     margin-bottom: 30px;
 }
 
-header .banner {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
+
 
 header .banner-img {
-
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 header .banner-img img {
@@ -92,9 +95,62 @@ header .banner-img img {
 }
 
 /* Banner Ends */
+
+
 /* Header Section Ends */
 
 
+
+/* Quick Features Section Starts */
+.quick-feautures-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 150px;
+}
+
+.quick-feautures-section .qfs-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 25px
+    
+}
+
+.qfs-img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.quick-feautures-section .qfs-txt-container {
+    margin-left: 50px;
+}
+
+.qfs-txt-container h3 {
+    color: var(--dark-1);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.qfs-txt-container h3 #ql {
+    color: var(--dark-3);
+    font-weight: 500;
+}
+
+.qfs-txt-container h3 #features {
+    color: var(--btn-color);
+}
+
+.qfs-txt-container p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--dark-3);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Quick Features Section Ends */
 
 
 
@@ -109,6 +165,13 @@ header .banner-img img {
     nav ul {
         padding-right: 20px;
     }
+    .quick-feautures-section{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .qfs-txt-container{
+        margin:30px 0px;
+    }
 
 }
 
@@ -120,5 +183,12 @@ header .banner-img img {
 
     nav ul {
         padding-right: 20px;
+    }
+    .quick-feautures-section{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .qfs-txt-container{
+        margin:30px 0px;
     }
 }

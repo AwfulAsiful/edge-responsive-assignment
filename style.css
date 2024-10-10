@@ -315,6 +315,21 @@ header .banner-img img {
 /* Sponsors section ends */
 
 
+/* Footer starts */
+footer{
+    background-color: var(--bg-color);
+    text-align: center;
+    margin: 0px 140px 100px 140px;
+    padding: 35px 0px;
+}
+footer p{
+    color: var(--dark-2);
+    font-size: 20px;
+    font-weight: 400;
+}
+/* Footer ends */
+
+
 @media screen and (max-width:576px) {
     nav {
         flex-direction: column;
@@ -357,6 +372,9 @@ header .banner-img img {
     }
     .sponsor-img{
         flex-direction: column;
+    }
+    footer{
+        padding:20px 60px;
     }
 
 }
@@ -405,5 +423,8 @@ header .banner-img img {
     .sponsor-img{
         flex-direction: column;
         
+    }
+    footer{
+        padding:20px 60px;
     }
 }

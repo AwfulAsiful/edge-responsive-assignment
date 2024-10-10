@@ -38,6 +38,10 @@ nav {
     align-items: center;
 }
 
+.nav-items i{
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
 nav ul {
     list-style-type: none;
     display: flex;
@@ -345,6 +349,10 @@ footer p{
     background-color: #fff;
     color: var(--btn-color);
 }
+.nav-items:hover i{
+    opacity: 1;
+    margin-left: 10px;
+}
 .fle-txt-title:hover{
     border-left-width: 20px;
 }
@@ -354,7 +362,9 @@ footer p{
 }
 .qfs-img-container img:hover{
     transform: scale(1.5);
+
 }
+
 /* Animations */
 
 

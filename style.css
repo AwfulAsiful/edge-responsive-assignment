@@ -1,47 +1,95 @@
-
-:root{
-    --dark-1:rgba(19, 19, 19, 1);
-    --dark-2:rgba(66, 66, 66, 1);
-    --dark-3:rgba(114, 114, 114, 1);
-    --btn-color:rgba(255, 144, 14, 1);
-    --bg-color:rgba(255, 144, 14, 0.1);
+:root {
+    --dark-1: rgba(19, 19, 19, 1);
+    --dark-2: rgba(66, 66, 66, 1);
+    --dark-3: rgba(114, 114, 114, 1);
+    --btn-color: rgba(255, 144, 14, 1);
+    --bg-color: rgba(255, 144, 14, 0.1);
 
 
 }
 
 
-*{
+* {
     margin: 0px;
     font-family: "Work Sans", sans-serif;
 }
 
-/* Header Section Starts */
-header{
-    background-color: var(--bg-color);
-    padding:50px 140px 0px 140px;
+.btn-primary {
+    background-color: var(--btn-color);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
 }
-nav{
+
+/* Header Section Starts */
+header {
+    background-color: var(--bg-color);
+    padding: 50px 140px 0px 140px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     display: flex;
-    gap:40px
+    gap: 40px
 }
-header nav h2{
-    color:var(--dark-1);
+
+header nav h2 {
+    color: var(--dark-1);
     font-size: 45px;
     font-weight: 700;
 }
-header nav ul li{
-    color:var(--dark-3);
+
+header nav ul li {
+    color: var(--dark-3);
     font-size: 18px;
     font-weight: 500;
 }
 
 /* Banner Starts */
+header .banner-txt {
+    text-align: center;
+    margin-top: 100px;
+}
+
+header .banner-txt h2 {
+    color: var(--dark-1);
+    font-size: 64px;
+    font-weight: 700;
+}
+
+header .banner-txt p {
+    color: var(--dark-3);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header .banner {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+header .banner-img {
+
+    margin-top: 50px;
+}
+
+header .banner-img img {
+    width: 100%;
+    height: auto;
+}
 
 /* Banner Ends */
 /* Header Section Ends */
@@ -52,22 +100,25 @@ header nav ul li{
 
 
 
-@media screen and (max-width:576px){
-    nav{
+@media screen and (max-width:576px) {
+    nav {
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
     }
-    nav ul{
+
+    nav ul {
         padding-right: 20px;
     }
+
 }
 
-@media screen and (min-width:576px) and (max-width:992px){
-    nav{
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav {
         flex-direction: column;
-        gap:20px;
+        gap: 20px;
     }
-    nav ul{
+
+    nav ul {
         padding-right: 20px;
     }
 }

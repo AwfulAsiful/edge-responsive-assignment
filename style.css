@@ -20,7 +20,7 @@
     font-size: 20px;
     font-weight: 600;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 20px;
 }
 
@@ -111,9 +111,8 @@ header .banner-img img {
 .quick-feautures-section .qfs-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2,auto);
+    grid-template-rows: repeat(2, auto);
     gap: 25px
-    
 }
 
 .qfs-img-container img {
@@ -152,7 +151,88 @@ header .banner-img img {
 
 /* Quick Features Section Ends */
 
+/* Features love and enjoy section starts */
 
+.features-love-enjoy-section {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 30px 100px;
+}
+
+.fle-text-container .fle-txt-title h3 {
+    color: var(--dark-1);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.fle-txt-title {
+    border-left: 5px solid var(--btn-color);
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.fle-text-container p {
+    color: var(--dark-3);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.fle-text-container {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.fle-img-container {
+    position: relative;
+}
+
+.fle-img-container img {
+    max-width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.fle-img-container .btn-primary {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 35px;
+    position: absolute;
+    bottom: -100px;
+    left: -60px;
+}
+
+.fle-img-container .btn-primary #ten {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.fle-txt-cards {
+    margin: 20px 0px;
+}
+
+.fle-text-card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.fle-text-card h4 {
+    color: var(--dark-1);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fle-text-card p {
+    color: var(--dark-3);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* Features love and enjoy section ends */
 
 
 
@@ -165,12 +245,20 @@ header .banner-img img {
     nav ul {
         padding-right: 20px;
     }
-    .quick-feautures-section{
+
+    .quick-feautures-section {
         flex-direction: column;
         padding: 40px;
     }
-    .qfs-txt-container{
-        margin:30px 0px;
+
+    .qfs-txt-container {
+        margin: 30px 0px;
+    }
+    .features-love-enjoy-section{
+        flex-direction: column;
+    }
+    .fle-text-container{
+        width: 100%;
     }
 
 }
@@ -184,11 +272,19 @@ header .banner-img img {
     nav ul {
         padding-right: 20px;
     }
-    .quick-feautures-section{
+
+    .quick-feautures-section {
         flex-direction: column;
         padding: 40px;
     }
-    .qfs-txt-container{
-        margin:30px 0px;
+
+    .qfs-txt-container {
+        margin: 30px 0px;
+    }
+    .features-love-enjoy-section{
+        flex-direction: column;
+    }
+    .fle-text-container{
+        width: 100%;
     }
 }

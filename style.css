@@ -381,6 +381,9 @@ footer p{
 
 
 @media screen and (max-width:576px) {
+    header{
+        padding: 15px;
+    }
     nav {
         flex-direction: column;
         gap: 20px;
@@ -395,8 +398,9 @@ footer p{
         padding: 40px;
     }
 
-    .qfs-txt-container {
-        margin: 30px 0px;
+    .quick-feautures-section .qfs-txt-container{
+        margin-top: 20px;
+        margin-left: 0px;
     }
 
     .features-love-enjoy-section {
@@ -404,10 +408,19 @@ footer p{
     }
 
     .fle-img-container img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
-
+    .fle-img-container .btn-primary{
+        padding: 20px;
+        font-size:18px;
+        bottom:-20px;
+        left:-24px;
+    }
+    .fle-img-container .btn-primary #ten {
+        font-size: 32px;
+        font-weight: 700;
+    }
     .facts-cards {
         flex-direction: column;
     }
@@ -424,12 +437,16 @@ footer p{
         flex-direction: column;
     }
     footer{
+        margin: 0px;
         padding:20px 60px;
     }
 
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 25px;
+    }
     nav {
         flex-direction: column;
         gap: 20px;
@@ -444,10 +461,10 @@ footer p{
         padding: 40px;
     }
 
-    .qfs-txt-container {
-        margin: 30px 0px;
+    .quick-feautures-section .qfs-txt-container{
+        margin-top: 20px;
+        margin-left: 0px;
     }
-
     .features-love-enjoy-section {
         flex-direction: column;
     }
@@ -475,6 +492,7 @@ footer p{
         
     }
     footer{
+        margin: 0px;
         padding:20px 60px;
     }
 }
